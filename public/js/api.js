@@ -41,7 +41,9 @@ var Api = (function() {
     // Built http request
     var http = new XMLHttpRequest();
     http.open('POST', messageEndpoint, true);
+    http.setRequestHeader('Access-Control-Allow-Headers', '*');
     http.setRequestHeader('Content-type', 'application/json');
+    http.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:1701');
     http.onreadystatechange = function() {
       if (http.readyState === 4 && http.status === 200 && http.responseText) {
         Api.setResponsePayload(http.responseText);

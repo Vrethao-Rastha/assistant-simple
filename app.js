@@ -51,7 +51,8 @@ app.post('/api/message', function(req, res) {
     context: req.body.context || {},
     input: req.body.input || {}
   };
-
+console.log("req.body.context",req.body.context)
+payload.context.timezone = "America/New_York"
   // Send the input to the assistant service
   assistant.message(payload, function(err, data) {
     if (err) {

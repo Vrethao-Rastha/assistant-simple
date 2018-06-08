@@ -13,4 +13,3 @@ applications:
   - my-watson-assistant-service
   env:
     NPM_CONFIG_PRODUCTION: false
-    $timezone: America/New_York

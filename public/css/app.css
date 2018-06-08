@@ -1,13 +1,17 @@
-* {
+*{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: #08FF07;
 }
 
 body {
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/fallout_pipboy.png');
 }
 
 div {
@@ -48,10 +52,13 @@ div {
 }
 
 #contentParent {
-  height: 92%;
+  margin-top: 10em;
+  margin-left: 20em;
+  height: 62%;
 }
 
 .responsive-columns-wrapper {
+  color: #08FF07;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -64,6 +71,7 @@ div {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  color: #08FF07;
   overflow: auto;
 }
 
@@ -79,8 +87,13 @@ div {
   max-width: 25rem;
   min-width: 9.375rem;
 }
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 
 #scrollingChat {
+  z-index: -1;
   margin: 0.75rem;
   overflow-y: auto;
   overflow-x: hidden;
@@ -108,6 +121,7 @@ div {
 }
 
 .load .message-inner {
+  color: #08FF07;
   opacity: 1;
   margin-top: 0.3125rem;
 }
@@ -122,7 +136,6 @@ div {
   color: #fff;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
-  background: #00B4A0;
   border-radius: 1.25rem;
   border-bottom-right-radius: 0;
   text-align: left;
@@ -165,7 +178,7 @@ div {
   position: relative;
   border-radius: 1.5625rem;
   font-size: 1rem;
-  color: #B5B5B5;
+  color: #08FF07;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
 }
@@ -181,8 +194,7 @@ div {
 
 .from-watson.latest.top p:before {
   content: ".";
-  color: #9855D4;
-  background-image: url("../img/marker_image.png");
+  color: #08FF07;
   background-size: 0.3125rem 1.3125rem;
   position: absolute;
   z-index: 2;
@@ -197,7 +209,7 @@ div {
   outline: none;
   background: transparent;
   font-size: 1rem;
-  color: #323232;
+  color: #08FF07;
   letter-spacing: 0.015rem;
   line-height: 1.3125rem;
   height: 2.5rem;
@@ -209,8 +221,7 @@ div {
 }
 
 #textInput.underline {
-  border-bottom: 2px solid #00B4A0;
-  width: 300px;
+  border-bottom: 2px solid #08FF07;
 }
 
 ::-webkit-input-placeholder {
@@ -237,7 +248,7 @@ input:-moz-placeholder {
 
 .inputOutline {
   display: block;
-  border-bottom: 0.0625rem solid #aeaeae;
+  border-bottom: 0.0625rem solid #08FF07;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -433,4 +444,4 @@ html{
   url('../fonts/ibm-glyphs.svg?1b8643#ibm-glyph') format('svg');
   font-weight: normal;
   font-style: normal;
-}
+}*/
